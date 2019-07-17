@@ -1,5 +1,4 @@
 {
-  "scats": {
     "scat1": {
       "location" : "NSS",
       "weight" : "12g",
@@ -39,6 +38,5 @@
       "sampleName" : "WTF?",
       "animal": "elephant",
       "uid": "12345"
-    }
   }
 }

@@ -43,7 +43,7 @@ class MyNavbar extends React.Component {
               <NavLink tag={RRNavLink} to='/home'>Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink tag={RRNavLink} to='/new'>New Scat</NavLink>
+              <NavLink tag={RRNavLink} to='/new'>Add a Miniature</NavLink>
             </NavItem>
             <NavItem>
               <NavLink onClick={this.logMeOut}>Logout</NavLink>
@@ -57,7 +57,7 @@ class MyNavbar extends React.Component {
     return (
       <div className="MyNavbar">
         <Navbar color="dark" dark expand="md">
-          <NavbarBrand href="/">Scat Surprise</NavbarBrand>
+          <NavbarBrand href="/">Warhammer Collection Tracker</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             {buildNavbar()}

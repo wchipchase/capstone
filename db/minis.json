@@ -1,0 +1,49 @@
+{
+  "minis": {
+    "miniature1" : {
+      "army": "Tau",
+      "name": "Fire Warrior",
+      "imageUrl": "https://www.games-workshop.com/en-US/Tau-Empire-Fire-Warriors-2017",
+      "numberOwned": 30,
+      "pointValue": 9,
+      "monetaryValue": "$150.00",
+      "uid": "QDiay2x3JyfKYg6nc2DU5uSHVTF3"
+    },
+    "miniature2" :{
+      "army": "Tau",
+      "name": "Fire Warrior",
+      "imageUrl": "https://www.games-workshop.com/en-US/Tau-Empire-Fire-Warriors-2017",
+      "numberOwned": 30,
+      "pointValue": 9,
+      "monetaryValue": "$150.00",
+      "uid": "QDiay2x3JyfKYg6nc2DU5uSHVTF3"
+    },
+    "miniature3" :{
+      "army": "Tau",
+      "name": "Fire Warrior",
+      "imageUrl": "https://www.games-workshop.com/en-US/Tau-Empire-Fire-Warriors-2017",
+      "numberOwned": 30,
+      "pointValue": 9,
+      "monetaryValue": "$150.00",
+      "uid": "QDiay2x3JyfKYg6nc2DU5uSHVTF3"
+    },
+    "miniature4" :{
+      "army": "Tau",
+      "name": "Fire Warrior",
+      "imageUrl": "https://www.games-workshop.com/en-US/Tau-Empire-Fire-Warriors-2017",
+      "numberOwned": 30,
+      "pointValue": 9,
+      "monetaryValue": "$150.00",
+      "uid": "QDiay2x3JyfKYg6nc2DU5uSHVTF3"
+    },
+    "miniature5" :{
+      "army": "Tau",
+      "name": "Fire Warrior",
+      "imageUrl": "https://www.games-workshop.com/en-US/Tau-Empire-Fire-Warriors-2017",
+      "numberOwned": 30,
+      "pointValue": 9,
+      "monetaryValue": "$150.00",
+      "uid": "QDiay2x3JyfKYg6nc2DU5uSHVTF3"
+    }
+  }  
+}
