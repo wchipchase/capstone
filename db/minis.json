@@ -3,7 +3,7 @@
     "miniature1" : {
       "army": "Tau",
       "name": "Fire Warrior",
-      "imageUrl": "https://www.games-workshop.com/en-US/Tau-Empire-Fire-Warriors-2017",
+      "imageUrl": "../assets/99120113044_TauXV25StealthTeam01.webp",
       "numberOwned": 30,
       "pointValue": 9,
       "monetaryValue": "$150.00",
@@ -12,7 +12,7 @@
     "miniature2" :{
       "army": "Tau",
       "name": "Fire Warrior",
-      "imageUrl": "https://www.games-workshop.com/en-US/Tau-Empire-Fire-Warriors-2017",
+      "imageUrl": "../assets/99120113044_TauXV25StealthTeam01.webp",
       "numberOwned": 30,
       "pointValue": 9,
       "monetaryValue": "$150.00",
@@ -21,7 +21,7 @@
     "miniature3" :{
       "army": "Tau",
       "name": "Fire Warrior",
-      "imageUrl": "https://www.games-workshop.com/en-US/Tau-Empire-Fire-Warriors-2017",
+      "imageUrl": "../assets/99120113044_TauXV25StealthTeam01.webp",
       "numberOwned": 30,
       "pointValue": 9,
       "monetaryValue": "$150.00",
@@ -30,7 +30,7 @@
     "miniature4" :{
       "army": "Tau",
       "name": "Fire Warrior",
-      "imageUrl": "https://www.games-workshop.com/en-US/Tau-Empire-Fire-Warriors-2017",
+      "imageUrl": "../assets/99120113044_TauXV25StealthTeam01.webp",
       "numberOwned": 30,
       "pointValue": 9,
       "monetaryValue": "$150.00",
@@ -39,7 +39,7 @@
     "miniature5" :{
       "army": "Tau",
       "name": "Fire Warrior",
-      "imageUrl": "https://www.games-workshop.com/en-US/Tau-Empire-Fire-Warriors-2017",
+      "imageUrl": "../assets/99120113044_TauXV25StealthTeam01.webp",
       "numberOwned": 30,
       "pointValue": 9,
       "monetaryValue": "$150.00",

@@ -71,7 +71,7 @@ class EditMini extends React.Component {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="imageUrl">Color</label>
+            <label htmlFor="imageUrl">Image URL</label>
             <input
               type="text"
               className="form-control"
