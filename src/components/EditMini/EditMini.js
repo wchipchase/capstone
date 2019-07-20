@@ -48,6 +48,10 @@ class EditMini extends React.Component {
     e.preventDefault();
     const saveMe = { ...this.state.newMini };
     const miniId = this.props.match.params.id;
+    saveMe.numberOwned = Number.parseInt(saveMe.numberOwned, 10);
+    saveMe.pointValue = Number.parseInt(saveMe.pointValue, 10);
+    saveMe.monetaryValue = Number.parseInt(saveMe.monetaryValue, 10);
+    console.error(saveMe);
     miniData.putMini(saveMe, miniId)
       .then(() => this.props.history.push('/home'))
       .catch(err => console.error('unable to save', err));
@@ -95,10 +99,10 @@ class EditMini extends React.Component {
           <div className="form-group">
             <label htmlFor="numberOwned">Number Owned</label>
             <input
-              type="text"
+              type="number"
               className="form-control"
               id="numberOwned"
-              placeholder="Number Owned"
+              placeholder="0"
               value={newMini.numberOwned}
               onChange={this.numberOwnedChange}
             />
@@ -106,10 +110,10 @@ class EditMini extends React.Component {
           <div className="form-group">
             <label htmlFor="pointValue">Point Value</label>
             <input
-              type="text"
+              type="number"
               className="form-control"
               id="pointValue"
-              placeholder="Point Value"
+              placeholder="0"
               value={newMini.pointValue}
               onChange={this.pointValueChange}
             />
@@ -117,10 +121,10 @@ class EditMini extends React.Component {
           <div className="form-group">
           <label htmlFor="monetaryValue">Monetary Value</label>
           <input
-            type="text"
+            type="number"
             className="form-control"
             id="monetaryValue"
-            placeholder="NSS"
+            placeholder="0"
             value={newMini.monetaryValue}
             onChange={this.monetaryValueChange}
           />
