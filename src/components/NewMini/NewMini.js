@@ -42,6 +42,9 @@ class NewMini extends React.Component {
     e.preventDefault();
     const saveMe = { ...this.state.newMini };
     saveMe.uid = firebase.auth().currentUser.uid;
+    saveMe.numberOwned = Number.parseInt(saveMe.numberOwned, 10);
+    saveMe.pointValue = Number.parseInt(saveMe.pointValue, 10);
+    saveMe.monetaryValue = Number.parseInt(saveMe.monetaryValue, 10);
     miniData.postMini(saveMe)
       .then(() => this.props.history.push('/home'))
       .catch(err => console.error('unable to save', err));
@@ -89,7 +92,7 @@ class NewMini extends React.Component {
           <div className="form-group">
             <label htmlFor="numberOwned">Number Owned</label>
             <input
-              type="text"
+              type="number"
               className="form-control"
               id="numberOwned"
               placeholder="How many are owned?"
@@ -100,7 +103,7 @@ class NewMini extends React.Component {
           <div className="form-group">
             <label htmlFor="pointValue">Point Value</label>
             <input
-              type="text"
+              type="number"
               className="form-control"
               id="pointValue"
               placeholder="What is the point value of mini"
@@ -114,7 +117,7 @@ class NewMini extends React.Component {
             type="text"
             className="form-control"
             id="How much is it worth?"
-            placeholder=""
+            placeholder="number"
             value={newMini.monetaryValue}
             onChange={this.monetaryValueChange}
           />

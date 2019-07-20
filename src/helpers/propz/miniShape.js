@@ -6,7 +6,7 @@ const miniCardShape = PropTypes.shape({
   imageUrl: PropTypes.string.isRequired,
   numberOwned: PropTypes.number.isRequired,
   pointValue: PropTypes.number.isRequired,
-  monetaryValue: PropTypes.string.isRequired,
+  monetaryValue: PropTypes.number.isRequired,
   uid: PropTypes.string.isRequired,
 });
 

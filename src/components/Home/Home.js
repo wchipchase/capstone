@@ -11,12 +11,18 @@ import './Home.scss';
 class Home extends React.Component {
   state = {
     minis: [],
+    totalValue: 0,
   }
 
   getMinis = () => {
     const { uid } = firebase.auth().currentUser;
     miniData.getMyMinis(uid)
-      .then(minis => this.setState({ minis }))
+      .then((minis) => {
+        const reducer = (totalValue, mini) => totalValue + mini.monetaryValue;
+        const totalValue = minis.reduce(reducer, 0);
+        console.error(totalValue);
+        this.setState({ minis, totalValue });
+      })
       .catch(err => console.error('could not get minis', err));
   }
 

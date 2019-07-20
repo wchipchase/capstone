@@ -24,7 +24,7 @@ class MiniCard extends React.Component {
         <div className="card">
           <div className="card-body">
             <h3 className="card-title">Army: {mini.army}</h3>
-            <h4 className="card-title">Name: {mini.name}</h4>
+            <h4 className="card-title">{mini.name}</h4>
             <img src={mini.imageUrl} alt={mini.name}/>
             <p className="card-text">No. Owned: {mini.numberOwned}</p>
             <p className="card-text">Point Value: {mini.pointValue}</p>
