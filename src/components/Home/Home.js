@@ -11,17 +11,27 @@ import './Home.scss';
 class Home extends React.Component {
   state = {
     minis: [],
-    totalValue: 0,
+    totalMonetaryValue: 0,
+    totalPointValue: 0,
+    totalNumberOfModels: 0,
   }
 
   getMinis = () => {
     const { uid } = firebase.auth().currentUser;
     miniData.getMyMinis(uid)
       .then((minis) => {
-        const reducer = (totalValue, mini) => totalValue + mini.monetaryValue;
-        const totalValue = minis.reduce(reducer, 0);
-        console.error(totalValue);
-        this.setState({ minis, totalValue });
+        const reducer1 = (totalMonetaryValue, mini) => totalMonetaryValue + mini.monetaryValue;
+        const totalMonetaryValue = minis.reduce(reducer1, 0);
+        const reducer2 = (totalPointValue, mini) => totalPointValue + mini.pointValue;
+        const totalPointValue = minis.reduce(reducer2, 0);
+        const reducer3 = (totalNumberOfModels, mini) => totalNumberOfModels + mini.numberOwned;
+        const totalNumberOfModels = minis.reduce(reducer3, 0);
+        this.setState({
+          minis,
+          totalMonetaryValue,
+          totalPointValue,
+          totalNumberOfModels,
+        });
       })
       .catch(err => console.error('could not get minis', err));
   }
@@ -47,11 +57,14 @@ class Home extends React.Component {
 
     return (
       <div className="Home col">
-        <h1>Home</h1>
         <div className="d-flex flex-wrap">
           {makeMiniCards}
         </div>
-
+        <footer className="footer navbar navbar-expand-md navbar-dark fixed-bottom bg-dark">
+          <div className="totalMonetaryValue"><h5>Total Monetary Value: ${this.state.totalMonetaryValue}</h5></div>
+          <div className="totalPointValue"><h5>Total Point Value: {this.state.totalPointValue}</h5></div>
+          <div className="numberOfModels"><h5>Number of Models Owned: {this.state.totalNumberOfModels}</h5></div>
+        </footer>
       </div>
     );
   }
