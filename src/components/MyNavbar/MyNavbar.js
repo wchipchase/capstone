@@ -46,6 +46,9 @@ class MyNavbar extends React.Component {
               <NavLink tag={RRNavLink} to='/new'>Add a Miniature</NavLink>
             </NavItem>
             <NavItem>
+              <NavLink tag={RRNavLink} to='/wishlist'>Wishlist</NavLink>
+            </NavItem>
+            <NavItem>
               <NavLink onClick={this.logMeOut}>Logout</NavLink>
             </NavItem>
           </Nav>
