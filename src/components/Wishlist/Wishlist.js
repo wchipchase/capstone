@@ -1,8 +1,11 @@
 import React from 'react';
+import ModalExample from '../Modal/Modal';
 
 class Wishlist extends React.Component {
   render() {
-    return <div>Hello Wishlist</div>;
+    return (
+      <ModalExample />
+    );
   }
 }
 
