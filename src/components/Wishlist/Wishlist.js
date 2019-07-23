@@ -1,7 +1,7 @@
 import React from 'react';
 import firebase from 'firebase/app';
 import 'firebase/auth';
-
+import Modal from '../Modal/Modal';
 import wishlistData from '../../helpers/data/wishlist';
 
 import MiniCard from '../MiniCard/MiniCard';
@@ -58,6 +58,7 @@ class Wishlist extends React.Component {
     return (
       <div className="Wishlist col">
         <div className="d-flex flex-wrap">
+        <Modal />
           {makeMiniCards}
         </div>
         <footer className="footer navbar navbar-expand-md navbar-dark fixed-bottom bg-dark">
