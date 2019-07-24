@@ -1,7 +1,4 @@
 import React from 'react';
-<<<<<<< HEAD
-import ModalExample from '../Modal/Modal';
-=======
 import firebase from 'firebase/app';
 import 'firebase/auth';
 import Modal from '../Modal/Modal';
@@ -10,7 +7,6 @@ import wishlistData from '../../helpers/data/wishlist';
 import MiniCard from '../MiniCard/MiniCard';
 
 import './Wishlist.scss';
->>>>>>> f8b3b9ba1925cacb0a4b54f2ed7a1fcf7913cea5
 
 class Wishlist extends React.Component {
   state = {
@@ -41,6 +37,7 @@ class Wishlist extends React.Component {
   }
 
   componentDidMount() {
+    console.error('this.getMinis');
     this.getMinis();
   }
 
@@ -51,10 +48,6 @@ class Wishlist extends React.Component {
   }
 
   render() {
-<<<<<<< HEAD
-    return (
-      <ModalExample />
-=======
     const makeMiniCards = this.state.minis.map(mini => (
       <MiniCard
         key={mini.id}
@@ -66,7 +59,7 @@ class Wishlist extends React.Component {
     return (
       <div className="Wishlist col">
         <div className="d-flex flex-wrap">
-        <Modal />
+        <Modal reload={this.getMinis} />
           {makeMiniCards}
         </div>
         <footer className="footer navbar navbar-expand-md navbar-dark fixed-bottom bg-dark">
@@ -75,7 +68,6 @@ class Wishlist extends React.Component {
           <div className="numberOfModels"><h5>Number of Models Wished For: {this.state.totalNumberOfModels}</h5></div>
         </footer>
       </div>
->>>>>>> f8b3b9ba1925cacb0a4b54f2ed7a1fcf7913cea5
     );
   }
 }

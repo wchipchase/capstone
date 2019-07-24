@@ -55,7 +55,7 @@ class Home extends React.Component {
     ));
 
     return (
-      <div className="Home col">
+      <div className="Home">
         <div className="d-flex flex-wrap">
           {makeMiniCards}
         </div>

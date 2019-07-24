@@ -20,7 +20,7 @@ class MiniCard extends React.Component {
     const { mini } = this.props;
     const editLink = `/edit/${mini.id}`;
     return (
-      <div className="MiniCard col-4">
+      <div className="MiniCard col-3">
         <div className="card">
           <div className="card-body">
             <h3 className="card-title">Army: {mini.army}</h3>

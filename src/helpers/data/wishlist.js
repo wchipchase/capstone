@@ -25,6 +25,7 @@ const getSingleMini = miniId => axios.get(`${baseUrl}/wishlist/${miniId}.json`);
 
 const postMini = newMini => axios.post(`${baseUrl}/wishlist.json`, newMini);
 
+
 const putMini = (updatedMini, miniId) => axios.put(`${baseUrl}/wishlist/${miniId}.json`, updatedMini);
 
 export default {
