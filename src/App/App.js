@@ -67,7 +67,7 @@ class App extends React.Component {
                 <Switch>
                   <PublicRoute path='/auth' component={Auth} authed={authed}/>
                   <PrivateRoute path='/home' component={Home} authed={authed}/>
-                  <PrivateRoute path= '/wishlist' component={Wishlist} authed={authed}/>
+                  <PrivateRoute path='/wishlist' component={Wishlist} authed={authed}/>
                   <PrivateRoute path='/new' component={NewMini} authed={authed}/>
                   <PrivateRoute path='/edit/:id' component={EditMini} authed={authed}/>
                   <PrivateRoute path='/mini/:id' component={SingleMini} authed={authed}/>

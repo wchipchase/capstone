@@ -19,6 +19,7 @@ img {
 
 .footer {
   text-align: center;
+  display: block;
 }
 
 .totalMonetaryValue{
@@ -33,7 +34,7 @@ img {
   padding-right: 2em;
 }
 
-.numberOwned{
+.numberOfModels{
   display: inline-block;
   padding-left: 2em;
   padding-right: 2em;

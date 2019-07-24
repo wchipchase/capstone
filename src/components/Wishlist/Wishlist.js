@@ -37,6 +37,7 @@ class Wishlist extends React.Component {
   }
 
   componentDidMount() {
+    console.error('this.getMinis');
     this.getMinis();
   }
 
@@ -58,7 +59,7 @@ class Wishlist extends React.Component {
     return (
       <div className="Wishlist col">
         <div className="d-flex flex-wrap">
-        <Modal />
+        <Modal reload={this.getMinis} />
           {makeMiniCards}
         </div>
         <footer className="footer navbar navbar-expand-md navbar-dark fixed-bottom bg-dark">
