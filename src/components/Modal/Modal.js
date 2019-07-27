@@ -78,8 +78,8 @@ class NewModal extends React.Component {
     const { newMini } = this.state;
     return (
       <section>
-        <h1>React-Modal Example</h1>
-        <input type="button" value="Open" onClick={() => this.openModal()} />
+        <h1>Wishlist</h1>
+        <input type="button" className="btn btn-danger"value="Add to Your Wishlist" onClick={() => this.openModal()} />
         <Modal visible={this.state.visible} width="300" height="450" effect="fadeInUp" onClickAway ={() => this.closeModal()}>
           <div>
             <h1>Add to Your Wishlist</h1>
